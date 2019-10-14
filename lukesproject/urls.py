@@ -16,8 +16,16 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from products import urls as urls_products
+from django.urls import path
+from accounts import urls as urls_accounts
+
+
 
 urlpatterns = [
+    path('', include('products.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^/products/', include(urls_products)),
+    url(r'^products/', include(urls_products)),
+    url(r'^accounts/', include(urls_accounts)),
 ]
+
+
