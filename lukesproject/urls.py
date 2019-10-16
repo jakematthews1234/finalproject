@@ -22,10 +22,9 @@ from accounts import urls as urls_accounts
 
 
 urlpatterns = [
-    path('', include('products.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^products/', include(urls_products)),
-    url(r'^accounts/', include(urls_accounts)),
+    path('', include('products.urls')),
+    path('', include('accounts.urls')),
 ]
 
 
