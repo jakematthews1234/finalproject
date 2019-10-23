@@ -25,8 +25,7 @@ SECRET_KEY = 'x!b+-ghc%h)8+gam&@w%465h&+@qsw&yen&*n=4jcm5dcjv3jaTHISKEYISFAKE'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
-'c9d1d94d5ca747edaeb28ca40331646d.vfs.cloud9.us-east-1.amazonaws.com']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition

@@ -1,6 +1,5 @@
 from django.conf.urls import url, include
 from .views import all_products
-from django.urls import path
 from . import views
 
 

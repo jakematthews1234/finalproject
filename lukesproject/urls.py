@@ -15,17 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from django.urls import path
 from accounts.views import index
 
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    path('products/', include('products.urls')),
-    path('accounts/', include('accounts.urls')),
+    url('products/', include('products.urls')),
+    url('accounts/', include('accounts.urls')),
     url(r'^$', index, name='index'),
-    
+
 ]
 
 
