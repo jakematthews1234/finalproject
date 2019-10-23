@@ -1,1 +1,3 @@
 {"filter":false,"title":".bashrc","tooltip":"~/.bashrc","undoManager":{"mark":-1,"position":-1,"stack":[]},"ace":{"folds":[],"scrolltop":0,"scrollleft":0,"selection":{"start":{"row":0,"column":0},"end":{"row":0,"column":0},"isBackwards":false},"options":{"guessTabSize":true,"useWrapMode":false,"wrapToView":true},"firstLineState":0},"timestamp":1570909860490,"hash":"2fb815a90f335e2f431d0c7557b90acbf6a3bfd0"}
+
+alias run="python3 ~/workspace/manage.py runserver"
