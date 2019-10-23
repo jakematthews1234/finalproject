@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from accounts.views import index
+import blog.views
 
 
 
@@ -24,6 +25,7 @@ urlpatterns = [
     url('products/', include('products.urls')),
     url('accounts/', include('accounts.urls')),
     url(r'^$', index, name='index'),
+    url(r'blog/', include('blog.urls')),
 
 ]
 
