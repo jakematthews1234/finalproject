@@ -19,7 +19,7 @@ from accounts.views import index
 import blog.views
 
 
-
+#  all main url's used on the website
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('products/', include('products.urls')),

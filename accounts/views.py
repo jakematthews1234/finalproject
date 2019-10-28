@@ -60,13 +60,16 @@ def register(request):
             user = auth.authenticate(request.POST.get('email'),
                                      password=request.POST.get('password1'))
 
+            # if the user successfully registers
             if user:
                 auth.login(request, user)
                 messages.success(request, "You have successfully registered")
                 return redirect(reverse('index'))
-
+            # if the user is unsuccessful at registering
             else:
                 messages.error(request, "unable to log you in at this time!")
+
+    # if the user registration form is not filled in correctly.
     else:
         user_form = UserRegistrationForm()
 
