@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from accounts.views import index
 from cart.views import view_cart
+from checkout.views import checkout
 import blog.views
 
 
@@ -28,6 +29,7 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'blog/', include('blog.urls')),
     url(r'cart/', include('cart.urls')),
+    url(r'checkout/', include('checkout.urls'))
 
 ]
 
