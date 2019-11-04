@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Testimonials </h1>
+{% for testimonial_posts in testimonial_posts %}
+    <h3> {{ testimonial_posts.title }} </h3>
+    <p> {{ testimonial_posts.testimonial_body}} </p>
+    <h6> {{ testimonial_posts.date_created_at }} </h6>
+    <h6> {{ testimonial_posts.is_favourite }} </h6>
+{% endfor %}
+{% endblock %}
