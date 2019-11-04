@@ -21,7 +21,7 @@ from checkout.views import checkout
 import blog.views
 
 
-#  all main url's used on the website
+#  all main url's used on the website, linked to their respective url folders
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('products/', include('products.urls')),
@@ -29,7 +29,8 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'blog/', include('blog.urls')),
     url(r'cart/', include('cart.urls')),
-    url(r'checkout/', include('checkout.urls'))
+    url(r'checkout/', include('checkout.urls')),
+    # url(r'testimonials/', include('testimonials.urls')),
 
 ]
 
